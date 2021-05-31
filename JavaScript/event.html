@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML event</title>
+</head>
+<body onload="alert('WELCOME')">
+    <label for="nama">Jangan Diubah</label>
+    <input id="nama" type="text" onkeydown="alert('dibilang jangan')" value="wakanda">
+    <br>
+    <label for="nama">nama</label>
+    <input id="nama" type="text" onchange="alert('hello : '+this.value)">
+    <br>
+    <input type="submit" value="klik" onclick="alert('kamu klik button')">
+    <br>
+    <div onmouseover="alert('Jangan Masuk !')"
+    style="width: 100pxx; padding: 20px; background: #000; color: #fff;">
+        Jangan Masuk
+    </div>
+    <br>
+    <div onmouseout="alert('Jangan Keluar !')"  style="width: 100pxx; padding: 20px; background: #000; color: #fff;">
+        Jangan Keluar
+    </div>
+</body>
+</html>

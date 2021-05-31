@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Penempatan CSS</title>
+    <!-- eksternal CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Style with external CSS</h1>
+    <!-- internal CSS -->
+    <style>
+        .center{
+            margin:auto;
+            display: table;
+        }
+        .center>.lingkaran{
+            font-family: consolas;
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            color: white;
+            background: blueviolet;
+            vertical-align: middle;
+            display: table-cell;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+    <div class="center">
+        <div class="lingkaran">internal CSS</div>
+    </div>
+    <!-- inline CSS -->
+    <div style="font-size: xx-large;font-family: consolas;color: blueviolet;text-align: center;margin-top: 20px;">inline CSS</div>
+</body>
+</html>

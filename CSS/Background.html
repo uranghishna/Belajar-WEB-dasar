@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background properties</title>
+</head>
+<body>
+    <style>
+        div{
+            padding: 50px;
+            max-width: 100px;
+            font-family: consolas;
+            font-weight: bold;
+            color: #fff;
+            margin: 10px;
+        }
+        /* color */
+        .color{
+            background-color: cadetblue;
+        }
+        /* image */
+        .image{
+            background-image: url(http://bit.ly/img-dsa);
+        }
+        .image2{
+            background-image: url(http://bit.ly/img-dsa);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        .image3{
+            background: #ffffff url("http://bit.ly/img-dsa") no-repeat right top;
+        }
+
+    </style>
+    <div class="color"></div>
+    <div class="image"></div>
+    <div class="image2"></div>
+    <div class="image3"></div>
+</body>
+</html>

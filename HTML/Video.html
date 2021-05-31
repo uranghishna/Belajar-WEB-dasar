@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video</title>
+</head>
+<body>
+    <!-- Dipanggil secara langsung melalui src -->
+    <h3>Video langsung</h3>
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    <br>
+    <!-- Video muted -->
+    <video muted src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    <br>
+    <!-- Setelah video berakhir, video akan mengulang -->
+    <video loop src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    <br>
+    <!-- Jika link video rusak, langsung -->
+    <h3>Video Multiple Source</h3>
+    <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    </video>
+
+</body>
+</html>

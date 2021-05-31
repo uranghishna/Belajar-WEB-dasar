@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output By ID</title>
+</head>
+<body>
+<h1>Output dari JS</h1>
+<div id="output"></div>
+<input id="inputan">
+<hr>
+    <script>
+        document.getElementById("output").innerHTML="contoh output";
+        document.getElementById("inputan").setAttribute('value','hehehe');
+
+        document.write("<h1>ini contoh output</h1>");
+        document.write("<p>output menggunakan JS</p>");
+    </script>
+    Tanpa ID
+    <h1>contoh print halaman</h1>
+    <button onclick="window.print()">print halaman</button>
+</body>
+</html> 

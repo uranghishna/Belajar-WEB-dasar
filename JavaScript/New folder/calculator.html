@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <style>
+        button {
+            border: 1px solid red; padding: 10px;
+            width: 100%;
+            height: 100%;
+        }
+        input {
+            border: 1px solid green; padding: 10px;
+            width: 100%-4px;
+            height: 100%;
+        }
+    </style>
+    <h1 style="text-align: center;">CALCULATOR</h1>
+    <table style="margin: auto;">
+        
+        <tr>
+            <td colspan="4">
+                <input placeholder="Hasil" id="hasil">
+            </td>
+        </tr>
+    
+        <tr>
+            <td colspan="2"> <button onclick="clear_semua()">Clear</button></td>
+            <td><button onclick="aksi('*')">*</button></td>
+            <td><button onclick="aksi('/')">/</button></td>
+        </tr>
+        
+        <tr>
+            <td><button onclick="angka('7')">7</button></td>
+            <td><button onclick="angka('8')">8</button></td>
+            <td><button onclick="angka('9')">9</button></td>
+            <td><button onclick="aksi('-')">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="angka('4')">4</button></td>
+            <td><button onclick="angka('5')">5</button></td>
+            <td><button onclick="angka('6')">6</button></td>
+            <td><button onclick="aksi('+')">+</button></td>
+        </tr>
+        
+        <tr>
+            <td><button onclick="angka('1')">1</button></td>
+            <td><button onclick="angka('2')">2</button></td>
+            <td><button onclick="angka('3')">3</button></td>
+            <td><button onclick="samadengan('=')">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"><button onclick="angka('0')">0</button></td>
+        </tr>
+    </table>
+    <script>
+        var hasil = "";
+        var a = "";
+        var b = "";
+        var lakukan= "";
+
+        function angka(num){
+            b = b+num 
+            document.getElementById("hasil").setAttribute('value', b);
+        }
+
+        function clear_semua(){
+            hasil=a=b=operator="";
+            value="";
+            document.getElementById("hasil").setAttribute('value', value);
+        }
+
+        function aksi(operator){
+            lakukan=operator;
+            a=b;
+            b="";
+            value=a+operator;
+            document.getElementById("hasil").setAttribute('value', value);
+        }
+
+        function samadengan(){
+            switch(lakukan){
+                    case "+" :
+                    hasil=parseInt(a)+parseInt(b);
+                break;
+                    case "-" :
+                    hasil=a-b;
+                break;
+                    case "*" :
+                    hasil=a*b;
+                break;
+                    case "/" :
+                    hasil=a/b;
+                break;
+            }
+            document.getElementById("hasil").setAttribute('value', hasil);
+        }
+        </script>
+</body>
+</html>
